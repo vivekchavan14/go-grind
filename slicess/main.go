@@ -25,4 +25,12 @@ func main() {
 	//sort package sorts integers, float values, strings etc
 	sort.Ints(keyList)
 	fmt.Println(keyList)
+
+	//removing elements based on index
+	var course = []string{"Js", "Ts", "T3", "MERN"}
+	fmt.Println("Available courses are : ", course)
+	var index int = 2
+	course = append(course[:index], course[index+1:]...)
+	fmt.Println("COURSES : ", course)
+
 }
